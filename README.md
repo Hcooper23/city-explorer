@@ -1,70 +1,104 @@
-# Getting Started with Create React App
+# Asynchronous code, and APIs
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+In this class you will be building a React application that uses the Axios library to make user-initiated requests for data from a third-party API.
 
-## Available Scripts
+## Resources
 
-In the project directory, you can run:
+Axios on NPM
 
-### `npm start`
+Location IQ Geocoding API - Specifically, the “Search / Forward GeoCoding” and “Static Maps” sections.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Process
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+For every lab in this module, you will have a new partner. For this lab, you and your new partner(s) will spend the first 15 minutes planning out an approach to this lab’s work on a whiteboard.
 
-### `npm test`
+1. Draw the web request-response cycle for the current lab tasks (about 15 minutes).
+    1. Document the data flow: identify inputs and outputs for each part of the cycle.
+    2. Outline the functions that support this data flow.
+    3. Be sure to include these drawings in your README.md.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+You will then work independently for the rest of the day, implementing your plan, coding in your own repository, submitting your own pull request.
 
-### `npm run build`
+## Workflow
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- We will be using the Trello project management tool for the duration of this project.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- To maximize your experience with Trello, you should create a free Trello account by clicking on the Sign Up button.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- After creating an account, go to the City Explorer Trello Board, open the “… Show Menu” link, click the “… More” link, and then click “Copy Board”. Before you create it, be sure to “Change” from Private to “Public” (and click “Yes, Make Board Public”) so your instructional team can see your work. Now, click “Create” to add a copy to your personal account.
 
-### `npm run eject`
+- This Trello board contains all of the features required to complete this lab assignment.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Review the user stories and analyze the feature requests and requirements in the lab.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Within each story, note the acceptance criteria (“Given … When … Then…”) and the checklist of feature tasks. Be careful to execute tasks in order as they are often dependencies of one another.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Throughout the lab time, check off tasks as you complete them, and move the story cards through the workflow.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Documentation
 
-## Learn More
+Your README.md must include:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Project Name
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+**Author**: Hayden Cooper
 
-### Code Splitting
+**Version**: 1.0.0 (increment the patch/fix version number if you make more commits past your first submission)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Overview
 
-### Analyzing the Bundle Size
+Making a react project that involves making requests to a third-party API using the Axios library. The project involves working with a partner for the initial planning stages and then working independently to implement the plan. The Trello project management tool will be used to track progress and complete the required features, which are listed as user stories with acceptance criteria and checklists of feature tasks. The Location IQ Geocoding API is specifically mentioned as the API to be used. The text emphasizes the importance of carefully executing tasks in order, as they are often dependencies of one another.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Getting Started
 
-### Making a Progressive Web App
+Get there keys and determine the flow of data and the lay out of the website.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Architecture
 
-### Advanced Configuration
+React, Bootstrap, LocationIQ, Trello, and Axios.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Change Log
 
-### Deployment
+04-17-23- 7:27PM EST (Readme update and merge to main for lab 06 completion)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Credit and Collaborations
 
-### `npm run build` fails to minify
+Websites:
+Location IQ
+Bootstrap
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+TA:
+Rual Zarate
+
+Drawing partners:
+Micahel Grant
+Juan Olmedo
+
+Instructor:
+JB Tellez
+Aubrey Patterson
+
+## Time Estimates
+
+For each of the lab features, make an estimate of the time it will take you to complete the feature, and record your start and finish times for that feature:
+
+Name of feature: Asynchronous code, and APIs
+
+Estimate of time needed to complete: 4 Hours
+
+Start time: 2:00PM EST
+
+Finish time: 7:31PM EST
+
+Actual time needed to complete: 5 Hours and 30 Minutes
+
+## Submission Instructions
+
+1. Complete your Feature Tasks for the lab, according to the Trello cards.
+2. Create a PR back to the main branch of your repository, showing ALL your work, and merge it cleanly.
+3. On Canvas, submit a link to your PR. Add a comment in your Canvas assignment which includes the following:
+    - A link to the deployed version of your latest code.
+    - A link to your public Trello board.
+    - A question within the context of this lab assignment.
+    - An observation about the lab assignment, or related ‘Ah-hah!’ moment.
+    - How long you spent working on this assignment.
