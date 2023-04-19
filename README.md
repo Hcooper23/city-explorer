@@ -102,3 +102,5 @@ Actual time needed to complete: Not Complete will be submitting as I need to go 
     - A question within the context of this lab assignment.
     - An observation about the lab assignment, or related ‘Ah-hah!’ moment.
     - How long you spent working on this assignment.
+
+[WRC Image](./IMG_4480.jpeg)
