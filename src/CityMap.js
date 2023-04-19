@@ -2,6 +2,7 @@ import React from 'react';
 import { Image } from 'react-bootstrap';
 
 const CityMap = ({ lat, lon, city }) => {
+  
   return (
     <div id="map">
       <Image
