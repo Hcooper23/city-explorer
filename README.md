@@ -42,55 +42,45 @@ Your README.md must include:
 # Project Name
 
 **Author**: Hayden Cooper
-
 **Version**: 1.0.0 (increment the patch/fix version number if you make more commits past your first submission)
 
 ## Overview
-
 Making a react project that involves making requests to a third-party API using the Axios library. The project involves working with a partner for the initial planning stages and then working independently to implement the plan. The Trello project management tool will be used to track progress and complete the required features, which are listed as user stories with acceptance criteria and checklists of feature tasks. The Location IQ Geocoding API is specifically mentioned as the API to be used. The text emphasizes the importance of carefully executing tasks in order, as they are often dependencies of one another.
-
 ## Getting Started
-
 Get there keys and determine the flow of data and the lay out of the website.
 
 ## Architecture
-
 React, Bootstrap, LocationIQ, Trello, and Axios.
 
 ## Change Log
-
 04-17-23- 7:27PM EST (Readme update and merge to main for lab 06 completion)
 
+04-18-23-3:00PM EST (Began building out the server back end of weather json for use as a API)
+
+04-18-23-7:00PM EST (Working back end accoridng to instructor for the APIA/JSON mixed back end server)
+
 ## Credit and Collaborations
+Websites: Location IQ Bootstrap
 
-Websites:
-Location IQ
-Bootstrap
+TA: Rual Zarate
 
-TA:
-Rual Zarate
+Drawing partners: Micahel Grant Juan Olmedo
 
-Drawing partners:
-Micahel Grant
-Juan Olmedo
-
-Instructor:
-JB Tellez
-Aubrey Patterson
+Instructor: JB Tellez Aubrey Patterson
 
 ## Time Estimates
 
 For each of the lab features, make an estimate of the time it will take you to complete the feature, and record your start and finish times for that feature:
 
-Name of feature: Asynchronous code, and APIs
+Estimate of time needed to complete: Back-end: 2 Hours/ Front-end: 3 Hours
 
-Estimate of time needed to complete: 4 Hours
+Start time: Back end- 3:00PM EST-7:PM EST / Front end- 10:00PM EST- 12:30AM EST 
 
-Start time: 10:00PM EST
+Finish time: Not done 404 error form who knows where anymore...beyond lost????
 
-Finish time: 12:30AM EST
+Actual time needed to complete: not done no clue where to go next been on a rabbit hole search for about 30- 45 minutes.
 
-Actual time needed to complete: Not Complete will be submitting as I need to go to bed. But will have my current issues and problems of my 404 and the solutions I have found listed in the comments?
+Add this information to your README.
 
 ## Submission Instructions
 
