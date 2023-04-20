@@ -66,6 +66,8 @@ TA: Rual Zarate
 
 Drawing partners: Micahel Grant Juan Olmedo
 
+Code Borrow/ Reviewed: Kyle White 
+
 Instructor: JB Tellez Aubrey Patterson
 
 ## Time Estimates
