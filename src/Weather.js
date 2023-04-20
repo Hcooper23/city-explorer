@@ -17,7 +17,7 @@ class CityWeather extends Component {
     const { forecasts } = this.props;
     return (
       <div>
-        {forecasts.map((forecast, index) => (
+        {forecasts.map((forecast, index, temperatures) => (
           <Card key={index} style={{ marginBottom: '1rem' }}>
             <Card.Header>
               {forecast.date}
@@ -32,10 +32,10 @@ class CityWeather extends Component {
               <Card.Body>
                 <Card.Text>Description: {forecast.description}</Card.Text>
                 <Card.Text>
-                  High Temperature: {forecast.maxTemp} °F
+                  High Temperature: {forecast.temperatures.max} °F
                 </Card.Text>
                 <Card.Text>
-                  Low Temperature: {forecast.minTemp} °F
+                  Low Temperature: {forecast.temperatures.min} °F
                 </Card.Text>
               </Card.Body>
             )}

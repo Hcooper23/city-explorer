@@ -5,7 +5,8 @@ import { Container, Row, Col, Image } from 'react-bootstrap';
 import CityForm from './CityForm';
 import CityCard from './Card';
 import ErrorAlert from './ErrorAlert';
-import Weather from './Weather';
+import CityWeather from './Weather';
+import Movies from './Movies';
 
 class Main extends Component {
   state = {
@@ -16,6 +17,7 @@ class Main extends Component {
     errorMessage: '',
     forecasts: [],
     showWeather: false,
+    movies: [],
   };
 
   handleCityInput = (event) => {
@@ -28,16 +30,23 @@ class Main extends Component {
     event.preventDefault();
 
     const { city } = this.state;
+    console.log(city);
     try {
       const cityDataResponse = await axios.get(`https://us1.locationiq.com/v1/search?key=${process.env.REACT_APP_LOCATION_API_KEY}&q=${city}&format=json`);
       const cityData = cityDataResponse.data[0];
       const mapUrl = `https://maps.locationiq.com/v3/staticmap?key=${process.env.REACT_APP_LOCATION_API_KEY}&center=${cityData.lat},${cityData.lon}&zoom=11&size=600x400&format=png`;
+
+      const moviesResponse = await axios.get(`${process.env.REACT_APP_SERVER}/movies?city=${city}`);
+      const movies = moviesResponse.data;
+
+
       const weatherDataResponse = await axios.get(`${process.env.REACT_APP_SERVER}/weather?lat=${cityData.lat}&lon=${cityData.lon}&searchQuery=${city}`);
       const forecasts = weatherDataResponse.data;
-
+      console.log(cityData, mapUrl, movies, forecasts);
       this.setState({
         cityData,
         mapUrl,
+        movies,
         forecasts,
         showWeather: true,
         error: false,
@@ -48,13 +57,14 @@ class Main extends Component {
         errorMessage: error.message,
       });
     }
+    console.log(city);
   };
+
 
   render() {
     const {
-      cityData, mapUrl, error, errorMessage, showWeather, forecasts,
+      cityData, mapUrl, error, errorMessage, showWeather, forecasts, movies,
     } = this.state;
-
     return (
       <Container>
         <Row>
@@ -74,7 +84,14 @@ class Main extends Component {
         {showWeather && (
           <Row>
             <Col>
-              <Weather forecasts={forecasts} />
+              <CityWeather forecasts={forecasts} />
+            </Col>
+          </Row>
+        )}
+        {movies.length > 0 && (
+          <Row>
+            <Col>
+              <Movies movies={movies} />
             </Col>
           </Row>
         )}
