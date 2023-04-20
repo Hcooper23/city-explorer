@@ -1,35 +1,49 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import React, { Component } from 'react';
+import { Card, Button } from 'react-bootstrap';
 
-function Weather(props) {
-  const [weatherData, setWeatherData] = useState(null);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await axios.get(`https://cityexplorerapi-z0rk.onrender.com/weather?city=${props.city}`);
-        setWeatherData(response.data);
-      } catch (error) {
-        console.error(error);
-      }
-    };
-    fetchData();
-  }, [props.city]);
-
-  if (!weatherData) {
-    return null;
+class CityWeather extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
   }
 
-  const temperature = Math.round(weatherData.main.temp - 273.15);
-  const description = weatherData.weather[0].description;
+  handleToggleDetails = (index) => {
+    this.setState((prevState) => ({
+      [index]: !prevState[index],
+    }));
+  };
 
-  return (
-    <div>
-      <h2>Current Weather in {props.city}</h2>
-      <p>Temperature: {temperature}°C</p>
-      <p>Description: {description}</p>
-    </div>
-  );
+  render() {
+    const { forecasts } = this.props;
+    return (
+      <div>
+        {forecasts.map((forecast, index) => (
+          <Card key={index} style={{ marginBottom: '1rem' }}>
+            <Card.Header>
+              {forecast.date}
+              <Button
+                variant='link'
+                onClick={() => this.handleToggleDetails(index)}
+              >
+                Show/Hide Details
+              </Button>
+            </Card.Header>
+            {this.state[index] && (
+              <Card.Body>
+                <Card.Text>Description: {forecast.description}</Card.Text>
+                <Card.Text>
+                  High Temperature: {forecast.maxTemp} °F
+                </Card.Text>
+                <Card.Text>
+                  Low Temperature: {forecast.minTemp} °F
+                </Card.Text>
+              </Card.Body>
+            )}
+          </Card>
+        ))}
+      </div>
+    );
+  }
 }
 
-export default Weather;
+export default CityWeather;
