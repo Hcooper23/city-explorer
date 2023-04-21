@@ -1,41 +1,90 @@
-h1 {
-  border: groove 5px orange;
-  width: fit-content;
-  margin: 0 auto 30px;
-  padding: 5px;
-}
-#cityForm {
-  width: fit-content;
-  margin: 0 auto;
-  padding: 5px;
-}
-#formButton {
-  width: 100%;
-  margin: 0 auto;
- margin-top: 10px;
-}
-#lat-lon {
-  width: 500px;
-  margin: 5px auto;
-}
-#thisCity {
-  /* width: 20%; */
-  margin: 5px;
-  align-items: center;
-}
-#thisLat,
-#thisLon {
-  /* width: 45%; */
-  margin: 5px;
-  align-items: center;
-}
-#map {
-   border: groove 12px lightblue;
-   width: fit-content;
-   margin: 20px auto;
- }
+@import url('https://fonts.googleapis.com/css2?family=Montserrat');
 
- #errorAlert {
-   width: 50vw;
-   margin: 0 auto;
- }
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #F8F8F8;
+  color: #333333;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+button {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  background-color: #C3AED6;
+  border-color: #C3AED6;
+  color: #ffffff;
+}
+
+button:hover {
+  background-color: #7E6FA0;
+  border-color: #7E6FA0;
+}
+
+footer {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.title-header {
+  text-align: center;
+}
+
+.city-header {
+  text-align: center;
+}
+
+.city-form {
+  text-align: center;
+}
+
+.city-button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #9BB7D4;
+  border-color: #9BB7D4;
+  color: #ffffff;
+}
+
+.city-button:hover {
+  background-color: #5C7D98;
+  border-color: #5C7D98;
+}
+
+.city-display {
+  text-align: center;
+  background-color: #C3AED6;
+  color: #ffffff;
+}
+
+.city-map {
+  text-align: center;
+}
+
+.main-footer {
+  text-align: center;
+}
+
+.card {
+  background-color: #9BB7D4;
+  color: #ffffff;
+}
+
+.carousel-caption h5 {
+  font-size: 3rem;
+  font-weight: 700;
+  text-shadow: 2px 2px #333333;
+}
+
+.carousel-caption p {
+  font-size: 2rem;
+  font-weight: 500;
+  text-shadow: 1px 1px #333333;
+}
