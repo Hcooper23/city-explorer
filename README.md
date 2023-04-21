@@ -57,12 +57,20 @@ React, Bootstrap, LocationIQ, Trello, and Axios.
 
 04-18-23-3:00PM EST (Began building out the server back end of weather json for use as a API)
 
-04-18-23-7:00PM EST (Working back end accoridng to instructor for the APIA/JSON mixed back end server)
+04-18-23-7:00PM EST (Working back end according to instructor for the APIA/JSON mixed back end server)
+
+04-18-23-3:00pm EST (Worked on yesterday lab and got Json to display on front)
+
+04-18-23-9:11pm EST (Submitted working back and front end talking to each other)
+
+04-18-23-9:11 EST (Workiong on back end for lab 08)
+
+04-19-23-1:03AM EST (Working deployed server and site running with all trello cards cleared out and meet)
 
 ## Credit and Collaborations
 Websites: Location IQ Bootstrap
 
-TA: Rual Zarate
+TA: Rual Zarate, David, Tammy
 
 Drawing partners: Micahel Grant Juan Olmedo
 
@@ -74,13 +82,13 @@ Instructor: JB Tellez Aubrey Patterson
 
 For each of the lab features, make an estimate of the time it will take you to complete the feature, and record your start and finish times for that feature:
 
-Estimate of time needed to complete: Back-end: 2 Hours/ Front-end: 3 Hours
+Estimate of time needed to complete: Back-end: 1 Hours/ Front-end: 2 Hours
 
-Start time: Back end- 3:00PM EST-7:PM EST / Front end- 10:00PM EST- 12:30AM EST 
+Start time: Back end- 9:00PM EST-10:00PM EST / Front end- 10:00PM EST- 1:05AM EST 
 
-Finish time: Not done 404 error form who knows where anymore...beyond lost????
+Finish time: Finished both Lab 07 and Lab 08 so finished at 1:03 AM EST
 
-Actual time needed to complete: not done no clue where to go next been on a rabbit hole search for about 30- 45 minutes.
+Actual time needed to complete: Total between two labs that needed to be finished was 10 Hours with about a 30 minute break for dinner.
 
 Add this information to your README.
 

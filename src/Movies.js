@@ -1,22 +1,13 @@
 import React from 'react';
 import { Card, ListGroup } from 'react-bootstrap';
 
-const Movies = ({ movies }) => (
-  <Card className="my-4">
-    <Card.Header as="h3">Movies filmed here:</Card.Header>
-    {movies.length > 0 ? (
-      <ListGroup variant="flush">
-        {movies.map((movie) => (
-          <ListGroup.Item key={movie.id}>
-            <Card.Text>{movie.title} ({movie.release_year})</Card.Text>
-            <Card.Text>Directed by {movie.director}</Card.Text>
-          </ListGroup.Item>
-        ))}
-      </ListGroup>
-    ) : (
-      <Card.Body>No movies found for this city.</Card.Body>
-    )}
-  </Card>
+const Movie = ({ title, releaseYear, director, coverPhotoUrl, description }) => (
+  <ListGroup.Item>
+    <Card.Text>{title} ({releaseYear})</Card.Text>
+    <Card.Text>Directed by {director}</Card.Text>
+    <Card.Text>{description}</Card.Text>
+    <img src={coverPhotoUrl} alt={title} width={300} height={300} />
+  </ListGroup.Item>
 );
 
-export default Movies
+export default Movie;

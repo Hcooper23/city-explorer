@@ -8,6 +8,7 @@ import ErrorAlert from './ErrorAlert';
 import CityWeather from './Weather';
 import Movies from './Movies';
 
+
 class Main extends Component {
   state = {
     city: '',
