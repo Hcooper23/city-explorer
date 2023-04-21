@@ -7,7 +7,7 @@ import CityCard from './Card';
 import ErrorAlert from './ErrorAlert';
 import CityWeather from './Weather';
 import Movies from './Movies';
-
+import './App.css';
 
 class Main extends Component {
   state = {

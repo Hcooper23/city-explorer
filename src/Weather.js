@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Card, Button } from 'react-bootstrap';
+import { Card } from 'react-bootstrap';
 
 class CityWeather extends Component {
   constructor(props) {
@@ -7,44 +7,25 @@ class CityWeather extends Component {
     this.state = {};
   }
 
-  handleToggleDetails = (index) => {
-    this.setState((prevState) => ({
-      [index]: !prevState[index],
-    }));
-  };
-
   render() {
     const { forecasts } = this.props;
+    const forecast = forecasts[0]; // Select the first forecast object in the array
     return (
       <div>
-        {forecasts.map((forecast, index) => (
-          <div key={index}>
-            <Card style={{ marginBottom: '1rem' }}>
-              <Card.Header>
-                {forecast.date}
-                <Button
-                  variant='link'
-                  onClick={() => this.handleToggleDetails(index)}
-                >
-                  {this.state[index] ? 'Hide Details' : 'Show Details'}
-                </Button>
-              </Card.Header>
-            </Card>
-            {this.state[index] && (
-              <Card style={{ marginBottom: '1rem' }}>
-                <Card.Body>
-                  <Card.Text>Description: {forecast.description}</Card.Text>
-                  <Card.Text>
-                    High Temperature: {forecast.temperatures.max} °F
-                  </Card.Text>
-                  <Card.Text>
-                    Low Temperature: {forecast.temperatures.min} °F
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            )}
-          </div>
-        ))}
+        <Card style={{ marginBottom: '1rem' }}>
+          <Card.Header>
+            {forecast.date}
+          </Card.Header>
+          <Card.Body>
+            <Card.Text>Description: {forecast.description}</Card.Text>
+            <Card.Text>
+              High Temperature: {forecast.temperatures.max} °F
+            </Card.Text>
+            <Card.Text>
+              Low Temperature: {forecast.temperatures.min} °F
+            </Card.Text>
+          </Card.Body>
+        </Card>
       </div>
     );
   }
