@@ -19,10 +19,10 @@ class CityWeather extends Component {
           <Card.Body>
             <Card.Text>Description: {forecast.description}</Card.Text>
             <Card.Text>
-              High Temperature: {forecast.temperatures.max} °F
+              High Temperature: {forecast.maxTemp} °F
             </Card.Text>
             <Card.Text>
-              Low Temperature: {forecast.temperatures.min} °F
+              Low Temperature: {forecast.minTemp} °F
             </Card.Text>
           </Card.Body>
         </Card>
@@ -31,4 +31,4 @@ class CityWeather extends Component {
   }
 }
 
-export default CityWeather;
+export default CityWeather;                                                      

@@ -35,6 +35,7 @@ class Main extends Component {
     try {
       const cityDataResponse = await axios.get(`https://us1.locationiq.com/v1/search?key=${process.env.REACT_APP_LOCATION_API_KEY}&q=${city}&format=json`);
       const cityData = cityDataResponse.data[0];
+      console.log("This is City Data", cityData);
       const mapUrl = `https://maps.locationiq.com/v3/staticmap?key=${process.env.REACT_APP_LOCATION_API_KEY}&center=${cityData.lat},${cityData.lon}&zoom=11&size=600x400&format=png`;
 
       const moviesResponse = await axios.get(`${process.env.REACT_APP_SERVER}/movies?city=${city}`);
@@ -42,6 +43,7 @@ class Main extends Component {
 
 
       const weatherDataResponse = await axios.get(`${process.env.REACT_APP_SERVER}/weather?lat=${cityData.lat}&lon=${cityData.lon}&searchQuery=${city}`);
+      console.log('Weather Data', weatherDataResponse.data)
       const forecasts = weatherDataResponse.data;
       console.log(cityData, mapUrl, movies, forecasts);
       this.setState({
